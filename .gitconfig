@@ -7,7 +7,7 @@
 	st = status
 	br = branch
     unstage = reset HEAD
-    hist = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    hist = log --graph --abbrev-commit --pretty=format:'%C(red)%h%C(reset) -%C(yellow)%d%C(reset) %s%C(green) (%cr) %C(bold blue)<%an>%C(reset)' --all
 	type = cat-file -t
 	dump = cat-file -p
 [color]
